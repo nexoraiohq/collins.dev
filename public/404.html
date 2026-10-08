@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>404 — Page not found | Collins Maiko</title>
+    <meta name="description" content="The page you are looking for does not exist or has been moved." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #08090a;
+        --bg-alt: #0e0f11;
+        --surface: #141517;
+        --ink: #f7f8f8;
+        --ink-2: #8a8f98;
+        --ink-3: #7e838b;
+        --line: rgba(255, 255, 255, 0.1);
+        --accent: #ff4a17;
+        --accent-ink: #ff6a3d;
+        --radius-lg: 18px;
+        --radius-pill: 980px;
+        --pad-x: clamp(20px, 5.4vw, 78px);
+        --nav-h: 72px;
+        --cur: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24'%3E%3Cpath d='M5.5 2.5 5.5 19.5 9.4 15.7 12 21.5 15 20.2 12.4 14.5 18 14.5Z' fill='%23ffffff' stroke='%2308090a' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") 9 4,
+        pointer;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        cursor: var(--cur);
+      }
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial,
+          sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        color: inherit;
+        cursor: var(--cur);
+      }
+
+      .bar {
+        border-bottom: 1px solid var(--line);
+        background: rgba(8, 9, 10, 0.8);
+        backdrop-filter: blur(12px);
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+      .bar__in {
+        max-width: 1284px;
+        margin: 0 auto;
+        padding: 0 var(--pad-x);
+        height: var(--nav-h);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 17px;
+        letter-spacing: -0.01em;
+        text-decoration: none;
+      }
+      .brand__mark {
+        width: 30px;
+        height: 30px;
+        border-radius: 9px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        display: grid;
+        place-items: center;
+        font-size: 12px;
+        font-weight: 700;
+        position: relative;
+      }
+      .brand__mark::after {
+        content: '';
+        position: absolute;
+        right: -3px;
+        top: -3px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--accent);
+        border: 2px solid var(--bg);
+      }
+      .bar__link {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--ink-2);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .bar__link:hover {
+        color: var(--accent-ink);
+      }
+
+      main {
+        flex: 1;
+        max-width: 1284px;
+        width: 100%;
+        margin: 0 auto;
+        padding: clamp(56px, 10vw, 120px) var(--pad-x);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-ink);
+        margin-bottom: 18px;
+      }
+      .eyebrow::before {
+        content: '';
+        width: 24px;
+        height: 1px;
+        background: var(--accent);
+      }
+      .code {
+        font-size: clamp(72px, 16vw, 150px);
+        font-weight: 700;
+        letter-spacing: -0.05em;
+        line-height: 0.95;
+        background: linear-gradient(180deg, #f7f8f8 30%, rgba(247, 248, 248, 0.35));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      h1 {
+        margin-top: 22px;
+        font-size: clamp(26px, 4vw, 40px);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+        max-width: 18ch;
+      }
+      .lede {
+        margin-top: 14px;
+        color: var(--ink-2);
+        font-size: clamp(16px, 2vw, 18px);
+        max-width: 52ch;
+      }
+      .actions {
+        margin-top: clamp(28px, 4vw, 40px);
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        padding: 13px 24px;
+        border-radius: var(--radius-pill);
+        background: var(--accent);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid transparent;
+        transition:
+          transform 0.2s ease,
+          background-color 0.2s ease;
+      }
+      .btn:hover {
+        background: var(--accent-ink);
+        transform: translateY(-1px);
+      }
+      .btn svg {
+        transition: transform 0.25s ease;
+      }
+      .btn:hover svg {
+        transform: translateX(4px);
+      }
+      .link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--ink-2);
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .link:hover {
+        color: var(--ink);
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        background: var(--bg-alt);
+      }
+      .foot {
+        max-width: 1284px;
+        margin: 0 auto;
+        padding: 24px var(--pad-x);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        color: var(--ink-3);
+        font-size: 13.5px;
+      }
+      .foot a {
+        color: var(--ink-2);
+        text-decoration: none;
+      }
+      .foot a:hover {
+        color: var(--accent-ink);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bar">
+      <div class="bar__in">
+        <a class="brand" href="/">
+          <span class="brand__mark">CM</span>
+          Collins Maiko
+        </a>
+        <a class="bar__link" href="/">collinsmaiko.co.ke</a>
+      </div>
+    </header>
+
+    <main>
+      <span class="eyebrow">Error 404</span>
+      <div class="code" aria-hidden="true">404</div>
+      <h1>This page went missing.</h1>
+      <p class="lede">
+        The page you're looking for doesn't exist or has been moved. Head back home to see my work,
+        services and pricing.
+      </p>
+      <div class="actions">
+        <a class="btn" href="/">
+          Back to home
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a class="link" href="/#contact">
+          Start a project
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <span>© 2026 Collins Maiko. All rights reserved.</span>
+        <span>
+          <a href="/sitemap.xml">sitemap.xml</a>
+          ·
+          <a href="/robots.txt">robots.txt</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

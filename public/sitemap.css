@@ -2,6 +2,9 @@
 :root {
   color-scheme: dark;
   margin: 0;
+  --cur: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24'%3E%3Cpath d='M5.5 2.5 5.5 19.5 9.4 15.7 12 21.5 15 20.2 12.4 14.5 18 14.5Z' fill='%23ffffff' stroke='%2308090a' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") 9 4,
+    pointer;
+  cursor: var(--cur);
   background: #08090a;
   color: #f7f8f8;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto,
@@ -34,6 +37,7 @@ urlset::before {
 
 url {
   display: block;
+  cursor: var(--cur);
   text-decoration: none;
   color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.1);
