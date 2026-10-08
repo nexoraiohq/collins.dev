@@ -1,0 +1,20 @@
+# robots.txt — collinsmaiko.co.ke
+# https://collinsmaiko.co.ke/
+
+# Pages on this site (1)
+#   1. Home — https://collinsmaiko.co.ke/
+
+# Allow Google
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing
+User-agent: Bingbot
+Allow: /
+
+# Allow all other crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://collinsmaiko.co.ke/sitemap.xml

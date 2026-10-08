@@ -1,0 +1,124 @@
+/* Sitemap styling — mirrors the homepage Linear dark theme */
+:root {
+  color-scheme: dark;
+  margin: 0;
+  background: #08090a;
+  color: #f7f8f8;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+}
+
+urlset {
+  display: block;
+  max-width: 1284px;
+  margin: 0 auto;
+  padding: clamp(56px, 8vw, 104px) clamp(20px, 5.4vw, 78px) clamp(48px, 7vw, 88px);
+}
+
+urlset::before {
+  content: "Sitemap — every page, indexed and ready to crawl.";
+  display: block;
+  font-size: clamp(34px, 5.4vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  max-width: 17ch;
+  color: #f7f8f8;
+  margin-bottom: clamp(32px, 5vw, 52px);
+}
+
+url {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)),
+    #141517;
+  border-radius: 18px;
+  padding: clamp(20px, 3vw, 28px);
+  margin-bottom: 14px;
+  transition: border-color 0.25s ease;
+}
+url:hover {
+  border-color: rgba(255, 74, 23, 0.55);
+}
+
+loc {
+  display: block;
+  font-size: clamp(17px, 2.4vw, 21px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #f7f8f8;
+  word-break: break-all;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+loc::before {
+  content: "↗  ";
+  color: #ff6a3d;
+  font-weight: 700;
+}
+
+lastmod,
+changefreq,
+priority {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 5px 11px;
+  border-radius: 980px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 12.5px;
+  color: #8a8f98;
+}
+lastmod {
+  color: #f7f8f8;
+  font-weight: 600;
+}
+lastmod::before {
+  content: "Last updated ";
+  color: #8a8f98;
+  font-weight: 400;
+}
+changefreq {
+  color: #f7f8f8;
+  font-weight: 600;
+}
+changefreq::before {
+  content: "Updates ";
+  color: #8a8f98;
+  font-weight: 400;
+}
+priority {
+  border-color: rgba(255, 74, 23, 0.4);
+  background: rgba(255, 74, 23, 0.16);
+  color: #ff6a3d;
+  font-weight: 600;
+}
+priority::before {
+  content: "Priority ";
+  font-weight: 400;
+}
+
+urlset::after {
+  content: "The complete map of collinsmaiko.co.ke as declared for search engines — Google, Bing and other crawlers use sitemap.xml to discover the site.  ·  © 2026 Collins Maiko";
+  display: block;
+  margin-top: clamp(32px, 5vw, 48px);
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #7e838b;
+  font-size: 13.5px;
+  max-width: 72ch;
+}
+
+@media (max-width: 560px) {
+  urlset::before {
+    font-size: 34px;
+  }
+}

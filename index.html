@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en-KE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Collins Maiko — Web Developer in Kisii, Kenya | Fast Business Websites</title>
+    <meta
+      name="description"
+      content="Frontend developer in Kisii, Kenya building fast websites for businesses across Kenya. React, TypeScript & Tailwind CSS. Get a site that wins customers."
+    />
+    <meta
+      name="keywords"
+      content="web developer Kisii, website designer Kenya, frontend developer Kenya, web design Kisii, React developer Kenya, affordable website Kenya, business website Nairobi, Collins Maiko"
+    />
+    <meta name="author" content="Collins Maiko" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#08090a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="geo.region" content="KE-45" />
+    <meta name="geo.placename" content="Kisii, Kenya" />
+    <meta name="geo.position" content="-0.6817;34.7667" />
+    <meta name="ICBM" content="-0.6817, 34.7667" />
+    <link rel="canonical" href="https://collinsmaiko.co.ke/" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/sf-pro-display-400.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/sf-pro-display-500.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/sf-pro-display-700.woff2"
+      crossorigin
+    />
+    <link rel="preload" as="image" href="/images/hero-showcase-sm.jpg" media="(max-width: 539px)" fetchpriority="high" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-showcase-md.jpg"
+      media="(min-width: 540px) and (max-width: 1023px)"
+      fetchpriority="high"
+    />
+    <link rel="preload" as="image" href="/images/hero-showcase.jpg" media="(min-width: 1024px)" fetchpriority="high" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Collins Maiko" />
+    <meta property="og:locale" content="en_KE" />
+    <meta property="og:title" content="Collins Maiko — Web Developer in Kisii, Kenya" />
+    <meta
+      property="og:description"
+      content="Fast, modern, conversion-focused websites for businesses and growing brands across Kenya."
+    />
+    <meta property="og:url" content="https://collinsmaiko.co.ke/" />
+    <meta property="og:image" content="https://collinsmaiko.co.ke/images/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Collins Maiko — Frontend Web Developer, Kisii, Kenya" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Collins Maiko — Web Developer in Kisii, Kenya" />
+    <meta
+      name="twitter:description"
+      content="Fast, modern, conversion-focused websites for businesses and growing brands across Kenya."
+    />
+    <meta name="twitter:image" content="https://collinsmaiko.co.ke/images/og-cover.png" />
+    <meta name="twitter:image:alt" content="Collins Maiko — Frontend Web Developer, Kisii, Kenya" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Collins Maiko" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      html,
+      body {
+        background: #08090a;
+      }
+      body {
+        margin: 0;
+      }
+      .boot {
+        height: 100vh;
+        overflow: hidden;
+      }
+      .boot-sk {
+        background: linear-gradient(100deg, #141517 40%, #1e2025 50%, #141517 60%);
+        background-size: 200% 100%;
+        animation: boot-sh 1.4s linear infinite;
+        border-radius: 8px;
+      }
+      @keyframes boot-sh {
+        to {
+          background-position: -200% 0;
+        }
+      }
+      .boot-announce {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      }
+      .boot-announce .boot-sk {
+        width: min(420px, 70%);
+        height: 12px;
+        border-radius: 999px;
+      }
+      .boot-nav {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      }
+      .boot-logo {
+        width: 94px;
+        height: 24px;
+      }
+      .boot-links {
+        display: none;
+        gap: 26px;
+      }
+      .boot-links .boot-sk {
+        width: 54px;
+        height: 12px;
+        border-radius: 999px;
+      }
+      .boot-cta {
+        width: 136px;
+        height: 40px;
+        border-radius: 999px;
+      }
+      @media (min-width: 940px) {
+        .boot-links {
+          display: flex;
+        }
+      }
+      .boot-hero {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: clamp(84px, 11.2vw, 162px) 20px 0;
+      }
+      .boot-t {
+        height: clamp(42px, 4.7vw, 66px);
+        margin-bottom: clamp(22px, 2.2vw, 32px);
+        border-radius: 10px;
+      }
+      .boot-t1 {
+        width: min(560px, 72%);
+      }
+      .boot-t2 {
+        width: min(780px, 92%);
+      }
+      .boot-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: clamp(44px, 5.15vw, 74px);
+      }
+      .boot-meta .boot-sk {
+        height: 13px;
+        border-radius: 999px;
+      }
+      .boot-meta .boot-sk:first-child {
+        width: min(460px, 58%);
+      }
+      .boot-meta .boot-sk:last-child {
+        width: 120px;
+        flex: none;
+      }
+      .boot-shot {
+        height: clamp(240px, 40vw, 558px);
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .boot-sk {
+          animation: none;
+        }
+      }
+    </style>
+    <script>
+      document.documentElement.dataset.motion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'off'
+        : 'on'
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://collinsmaiko.co.ke/#person",
+            "name": "Collins Maiko",
+            "jobTitle": "Frontend Developer & Web Designer",
+            "url": "https://collinsmaiko.co.ke/",
+            "email": "mailto:collinsmaiko91@gmail.com",
+            "telephone": "+254713324672",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kisii",
+              "addressRegion": "Kisii County",
+              "addressCountry": "KE"
+            },
+            "knowsAbout": [
+              "React",
+              "TypeScript",
+              "JavaScript",
+              "HTML",
+              "CSS",
+              "Tailwind CSS",
+              "Responsive Web Design",
+              "Web Performance",
+              "SEO",
+              "Web Accessibility"
+            ],
+            "sameAs": [
+              "https://github.com/collinsmaiko",
+              "https://www.linkedin.com/in/collinsmaiko",
+              "https://www.instagram.com/collinsmaiko"
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://collinsmaiko.co.ke/#business",
+            "name": "Collins Maiko — Web Development Services",
+            "description": "Professional web design and frontend development services for businesses in Kisii and across Kenya. Fast, mobile-friendly websites built with React, TypeScript and Tailwind CSS.",
+            "url": "https://collinsmaiko.co.ke/",
+            "image": "https://collinsmaiko.co.ke/images/og-cover.png",
+            "telephone": "+254713324672",
+            "email": "mailto:collinsmaiko91@gmail.com",
+            "priceRange": "$$",
+            "founder": { "@id": "https://collinsmaiko.co.ke/#person" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Kisii",
+              "addressLocality": "Kisii",
+              "addressRegion": "Kisii County",
+              "postalCode": "40200",
+              "addressCountry": "KE"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": -0.6817, "longitude": 34.7667 },
+            "areaServed": [
+              { "@type": "City", "name": "Kisii" },
+              { "@type": "City", "name": "Nairobi" },
+              { "@type": "City", "name": "Mombasa" },
+              { "@type": "City", "name": "Kisumu" },
+              { "@type": "City", "name": "Eldoret" },
+              { "@type": "City", "name": "Nakuru" },
+              { "@type": "Country", "name": "Kenya" }
+            ],
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            },
+            "sameAs": [
+              "https://github.com/collinsmaiko",
+              "https://www.linkedin.com/in/collinsmaiko",
+              "https://www.instagram.com/collinsmaiko"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://collinsmaiko.co.ke/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does a website take?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Most small websites can be completed within a few days depending on the scope, content and feedback." }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you work with businesses outside Kenya?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. I can work with clients remotely regardless of location." }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need to provide the content?",
+                "acceptedAnswer": { "@type": "Answer", "text": "You can provide your own text and images, or I can help structure the content required for the website." }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you redesign my existing website?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. I can redesign an outdated website while improving its responsiveness, usability and visual presentation." }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide hosting?",
+                "acceptedAnswer": { "@type": "Answer", "text": "I can deploy the website and help you get it online. Hosting and domain costs depend on the setup." }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I request changes?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. Each project includes a defined revision period based on the package and project scope." }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you add WhatsApp?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. WhatsApp contact and booking functionality can be integrated into your website." }
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://collinsmaiko.co.ke/#website",
+            "url": "https://collinsmaiko.co.ke/",
+            "name": "Collins Maiko",
+            "inLanguage": "en-KE",
+            "publisher": { "@id": "https://collinsmaiko.co.ke/#person" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot" aria-hidden="true">
+        <div class="boot-announce"><span class="boot-sk"></span></div>
+        <div class="boot-nav">
+          <span class="boot-sk boot-logo"></span>
+          <div class="boot-links">
+            <span class="boot-sk"></span>
+            <span class="boot-sk"></span>
+            <span class="boot-sk"></span>
+            <span class="boot-sk"></span>
+            <span class="boot-sk"></span>
+          </div>
+          <span class="boot-sk boot-cta"></span>
+        </div>
+        <div class="boot-hero">
+          <div class="boot-sk boot-t boot-t1"></div>
+          <div class="boot-sk boot-t boot-t2"></div>
+          <div class="boot-meta">
+            <span class="boot-sk"></span>
+            <span class="boot-sk"></span>
+          </div>
+          <div class="boot-sk boot-shot"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
